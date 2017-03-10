@@ -90,60 +90,62 @@ h2 {
 }
 
 /* --------- SPLASH --------- */
+#splash {
+  overflow: hidden;
+  .content {
+    height: ~"calc(100% - 50px)";
 
-.content {
-  height: ~"calc(100% - 50px)";
+    .row {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-align: flex-end;
 
-  .row {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-align: flex-end;
+      .column {
+        position: relative;
+        bottom: 50px;
+      }
+    
+      .column:nth-child(1) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
 
-    .column {
-      position: relative;
-      bottom: 50px;
+      .column:nth-child(2) {
+        flex-direction: row;
+        text-align: left;
+      }
     }
-  
-    .column:nth-child(1) {
-      flex-direction: row-reverse;
-      text-align: right;
+
+    .logo {
+      height: 200px;
     }
 
-    .column:nth-child(2) {
-      flex-direction: row;
+    .information {
+      list-style-type: none;
       text-align: left;
-    }
-  }
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      width: calc(2.795 * 200px);
+      justify-content: space-between;
+      background: white;
+      color: #231F20;
+      padding: 30px;
 
-  .logo {
-    height: 200px;
-  }
+      li {
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
 
-  .information {
-    list-style-type: none;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    height: 250px;
-    width: calc(2.795 * 200px);
-    justify-content: space-between;
-    background: white;
-    color: #231F20;
-    padding: 30px;
+      li:nth-child(1) {
+        font-size: 15px;
+      }
 
-    li {
-      font-weight: 300;
-      letter-spacing: 1px;
-    }
-
-    li:nth-child(1) {
-      font-size: 15px;
-    }
-
-    li:nth-child(2) {
-      font-size: 25px;
-      text-align: center;
+      li:nth-child(2) {
+        font-size: 25px;
+        text-align: center;
+      }
     }
   }
 }
@@ -154,7 +156,7 @@ h2 {
   text-align: center;
   height: initial;
   padding-bottom: 30px;
-  
+
   p {
     width: 35%;
     margin: 0 auto;
