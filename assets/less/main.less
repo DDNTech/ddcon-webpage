@@ -48,10 +48,15 @@ h2 {
   display: inline-block;
   font-size: 25px;
   text-transform: uppercase;
-  border: 5px solid black;
+  border: 5px solid white;
+  color: white;
   padding: 10px 20px;
   display: inline-block;
+}
 
+.white h2 {
+  border: 5px solid #231F20;
+  color: #231F20;
 }
 
 /* --------- NAVIGATION --------- */
@@ -227,6 +232,30 @@ h2 {
   }
 }
 
+/* --------- TEAM --------- */
+
+#team {
+  text-align: center;
+
+  .team-wrapper {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 720px;
+    margin: 0 auto;
+
+    img {
+      border-radius: 100px;
+    }
+  }
+
+  .team-image {
+    text-align: center;
+  }
+}
+
+
 /* MISC */
 .separator {
   position: relative;
@@ -252,6 +281,11 @@ h2 {
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
+.separator.invert {
+  position: relative;
+  bottom: 1px;
+}
+
 .separator.invert::before {
     background-color: white;
 }
@@ -262,4 +296,5 @@ h2 {
 
 .separator.reverse {
   transform: rotateY(180deg);
+
 }

@@ -47,9 +47,14 @@ h2 {
   font-weight: bold;
   font-size: 25px;
   text-transform: uppercase;
-  border: 5px solid black;
+  border: 5px solid white;
+  color: white;
   padding: 10px 20px;
   display: inline-block;
+}
+.white h2 {
+  border: 5px solid #231F20;
+  color: #231F20;
 }
 /* --------- NAVIGATION --------- */
 .brand img {
@@ -196,6 +201,24 @@ h2 {
   align-items: stretch;
   width: 810px;
 }
+/* --------- TEAM --------- */
+#team {
+  text-align: center;
+}
+#team .team-wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+  margin: 0 auto;
+}
+#team .team-wrapper img {
+  border-radius: 100px;
+}
+#team .team-image {
+  text-align: center;
+}
 /* MISC */
 .separator {
   position: relative;
@@ -217,6 +240,10 @@ h2 {
   height: 100%;
   background-color: white;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+.separator.invert {
+  position: relative;
+  bottom: 1px;
 }
 .separator.invert::before {
   background-color: white;
