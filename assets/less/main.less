@@ -13,8 +13,12 @@ html, body {
   color: white;
   background: #231F20;
   font-family: "Lato", sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 300;
+}
+
+a {
+  color: #29aae2;
 }
 
 .container-fluid {
@@ -46,7 +50,7 @@ h2 {
   text-transform: uppercase;
   border: 5px solid black;
   padding: 10px 20px;
-  display: inline-block
+  display: inline-block;
 
 }
 
@@ -64,7 +68,7 @@ h2 {
   height: 50px;
   align-items: center;
   padding: 50px 40px;
-
+  font-size: 17px;
 
   li {
     display: inline;
@@ -79,7 +83,7 @@ h2 {
     }
 
     a:hover {
-      color: #ababab;
+      color: #29aae2;
       text-decoration: none;
     }
   }
@@ -92,6 +96,7 @@ h2 {
 /* --------- SPLASH --------- */
 #splash {
   overflow: hidden;
+  height: 70%;
   .content {
     height: ~"calc(100% - 50px)";
 
@@ -100,6 +105,51 @@ h2 {
       display: flex;
       align-items: center;
       flex-align: flex-end;
+
+      .inner {
+        text-align: center;
+        width: 100%;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 559px;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+        position: relative;
+        bottom: 20px;
+
+        li {
+          display: inline;
+          font-size: 18px;
+          font-weight: 100;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+      }
+
+      button {
+        padding: 15px 20px;
+        border: 0;
+        border-radius: 35px;
+        box-shadow: 0px 0px 0px 5px #110f10;
+        text-transform: uppercase;
+        border: 1px solid #4ab3e0;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-shadow: -1px 1px #4b7380;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3aaee0+0,26a8e0+100 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4aaddb+0,0da1e0+100 */
+        background: #29aae2;
+
+      }
+      button:hover {
+        background: #249ace;
+        border: 1px solid #409cc3;
+      }
 
       .column {
         position: relative;
@@ -119,33 +169,9 @@ h2 {
 
     .logo {
       height: 200px;
-    }
-
-    .information {
-      list-style-type: none;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      height: 250px;
-      width: calc(2.795 * 200px);
-      justify-content: space-between;
-      background: white;
-      color: #231F20;
-      padding: 30px;
-
-      li {
-        font-weight: 300;
-        letter-spacing: 1px;
-      }
-
-      li:nth-child(1) {
-        font-size: 15px;
-      }
-
-      li:nth-child(2) {
-        font-size: 25px;
-        text-align: center;
-      }
+      margin: 0 auto;
+      position: relative;
+      bottom: 37px;
     }
   }
 }
@@ -173,6 +199,17 @@ h2 {
 
   h2 {
     margin: 30px;
+    margin-bottom: 40px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 810px;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
