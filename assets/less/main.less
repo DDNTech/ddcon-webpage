@@ -40,6 +40,19 @@
     display: none;
   }
 
+  #splash .content .logo {
+    height: 125px;
+  }
+
+  #splash .content .row ul {
+    flex-direction: column;
+    width: initial;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
   #team {
     height: initial;
   }
@@ -60,6 +73,17 @@
   #about .row {
     width: 80%;
     margin: 0 auto;
+  }
+
+  #about {
+    .rewind-item.image-wrapper {
+      overflow-x: scroll;
+      max-width: 300px;
+
+      img {
+        margin-right: 30px
+      }
+    }
   }
 }
 

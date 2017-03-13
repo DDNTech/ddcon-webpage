@@ -412,6 +412,16 @@ button.register:hover {
   .separator {
     display: none;
   }
+  #splash .content .logo {
+    height: 125px;
+  }
+  #splash .content .row ul {
+    flex-direction: column;
+    width: initial;
+  }
+  #splash .content .row ul li {
+    margin-bottom: 15px;
+  }
   #team {
     height: initial;
   }
@@ -424,6 +434,17 @@ button.register:hover {
   }
   #team .team-wrapper:nth-child(n + 1) {
     margin-top: -25px;
+  }
+  #about .row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #about .rewind-item.image-wrapper {
+    overflow-x: scroll;
+    max-width: 300px;
+  }
+  #about .rewind-item.image-wrapper img {
+    margin-right: 30px;
   }
 }
 /********** Super extra small devices Only **********/
