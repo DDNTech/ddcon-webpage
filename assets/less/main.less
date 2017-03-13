@@ -7,15 +7,26 @@
 @import "breakpoints/desktop.less";
 
 @media (max-width: 1250px) {
-  body {
-    display: none;
+  #about .rewind-item.left, #about .rewind-item.right {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  #about .rewind-item.left, #about .rewind-item.right {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .registration h3, p{
-    width: 600px;
   }
 /*  #about .rewind-item{
     width: 600px;
@@ -25,8 +36,25 @@
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  .registration h3, p{
-    width: 500px;
+  .separator {
+    display: none;
+  }
+
+  #team {
+    height: initial;
+  }
+
+  #team .team-wrapper {
+    flex-direction: column;
+    width: 150px;
+
+    img {
+      margin-bottom: 50px;
+    }
+
+    &:nth-child(n + 1) {
+      margin-top: -25px;
+    }
   }
 }
 
