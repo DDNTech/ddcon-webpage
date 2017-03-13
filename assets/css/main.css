@@ -13,6 +13,10 @@
   font-weight: bold;
   font-style: normal;
 }
+*{
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -98,7 +102,7 @@ h2 {
 /* --------- SPLASH --------- */
 #splash {
   overflow: hidden;
-  height: 70%;
+  /*height: 70%;*/
 }
 #splash .content {
   height: calc(100% - 50px);
@@ -113,6 +117,7 @@ h2 {
   text-align: center;
   width: 100%;
 }
+
 #splash .content .row ul {
   list-style-type: none;
   display: flex;
@@ -136,18 +141,20 @@ h2 {
   border: 0;
   border-radius: 35px;
   box-shadow: 0px 0px 0px 5px #110f10;
-  text-transform: uppercase;
-  border: 1px solid #4ab3e0;
+  color: white;
   font-size: 17px;
   letter-spacing: 1px;
-  text-shadow: -1px 1px #4b7380;
+  /*text-shadow: -1px 1px #4b7380;*/
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3aaee0+0,26a8e0+100 */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4aaddb+0,0da1e0+100 */
-  background: #29aae2;
+  background: #249ACE;
+  margin-top: 25px;
 }
 #splash .content .row button:hover {
-  background: #249ace;
-  border: 1px solid #409cc3;
+  background-color: white;
+  /*border: 1px solid #3AA3FF;*/
+  color: #249ACE;
+  transition: .5s;
 }
 #splash .content .row .column {
   position: relative;
@@ -162,43 +169,78 @@ h2 {
   text-align: left;
 }
 #splash .content .logo {
+  background:url('') no-repeat;
   height: 200px;
-  margin: 0 auto;
+  margin: 50px auto 0;
   position: relative;
   bottom: 37px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+  margin:0 auto;
+}
+th{
+  color: #249ACE;
+}
+td, th {
+  border-bottom: 1px solid #dddddd;
+  padding: 5px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  /*background-color: #949494;*/
+}
+
+.registration h3{
+  text-decoration: underline;
+}
+.registration h3,p{
+  margin: 30px auto;
+  text-align: left;
+  width: 800px;
+}
+
+.registration span{
+  font-style: italic;
+}
+
+.reg-table{
+  margin:50px 0;
+}
+
+.earlyreg p{
+  text-align: center; 
+  font-size: 1.4em;
 }
 /* --------- NAVIGATION --------- */
 .brand img {
   height: 50px;
+  margin:15px;
 }
-.navigation {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  height: 50px;
-  align-items: center;
-  padding: 50px 40px;
-  font-size: 17px;
+
+.icon-bar{
+  background-color: white;
 }
-.navigation li {
-  display: inline;
-  margin-right: 20px;
-  text-transform: uppercase;
-  font-weight: 300;
+.navbar-collapse{
+  text-align: center;
 }
-.navigation li a {
-  font-weight: 300;
-  color: white;
-  letter-spacing: 1px;
+#nav-links a{
+ font-weight: 300;
+ color: white;
+ letter-spacing: 1px;
 }
-.navigation li a:hover {
+
+#nav-links a:hover{
   color: #29aae2;
-  text-decoration: none;
+  transition:.3s;
+  background-color: transparent;
+  cursor: pointer;
 }
-.navigation .left {
-  margin-right: auto;
-}
+
 /* --------- SPONSORS --------- */
 #sponsorship {
   text-align: center;
@@ -230,6 +272,7 @@ h2 {
   text-align: center;
   height: initial;
   padding-bottom: 30px;
+
 }
 #about .rewind-item {
   margin: 0 auto;
@@ -265,4 +308,27 @@ h2 {
   justify-content: space-between;
   align-items: stretch;
   width: 810px;
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .registration h3, p{
+    width: 600px;
+  }
+/*  #about .rewind-item{
+    width: 600px;
+    margin:0 auto;
+  }*/
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .registration h3, p{
+    width: 500px;
+  }
+}
+
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
 }
