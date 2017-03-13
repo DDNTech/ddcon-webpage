@@ -6,15 +6,30 @@
 @import "breakpoints/tablet.less"; 
 @import "breakpoints/desktop.less";
 
+@media (max-width: 1250px) {
+  body {
+    display: none;
+  }
+}
 
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .registration h3, p{
+    width: 600px;
+  }
+/*  #about .rewind-item{
+    width: 600px;
+    margin:0 auto;
+  }*/
+}
 
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .registration h3, p{
+    width: 500px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
+}

@@ -1,0 +1,92 @@
+#registration {
+  .container-fluid {
+    text-align: center;
+
+    h3 {
+      margin-bottom: 40px;
+    }
+
+    p {
+      width: 60%;
+      margin: 40px auto;
+    }
+
+    table {
+      width: 500px;
+      margin: 0 auto;
+      font-size: 17px;
+      color: white;
+
+      tr td {
+        padding: 10px;
+
+        &:nth-child(1) {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        &:nth-child(n + 2) {
+          font-size: 22px;
+          letter-spacing: 1px;
+          font-weight: 500;
+        }
+
+        &:nth-child(2) {
+          background: #3be87f;
+          color: #186536;
+        }
+      }
+
+      tr:nth-last-child(1) td:nth-child(2) {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      tr:nth-last-child(1) td:nth-child(2), tr:nth-last-child(1) td:nth-child(3){
+      }
+
+      th {
+        text-align: center;
+        padding: 10px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+
+      th:nth-child(2) {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #3be87f;
+        color: #186536;
+      }
+
+    }
+
+    &.white table {
+      color: #231F20;
+    }
+  }
+
+}
+
+#three-day-pass, #one-day-pass {
+  text-align: center;
+  height: initial;
+}
+
+#reg-costs {
+  height: initial;
+  &.container-fluid {
+    table {
+      th {
+        font-size: 18px;
+      }
+
+      .sub {
+        font-size: 13px;
+        display: block;
+      }
+    }
+  }
+}
