@@ -1,0 +1,84 @@
+
+/* --------- SPLASH --------- */
+
+#splash {
+  overflow: hidden;
+  height: 70%;
+  .content {
+    height: ~"calc(100% - 50px)";
+
+    .row {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-align: flex-end;
+
+      .inner {
+        text-align: center;
+        width: 100%;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 559px;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+        position: relative;
+        bottom: 20px;
+
+        li {
+          display: inline;
+          font-size: 18px;
+          font-weight: 100;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+      }
+
+      button {
+        padding: 15px 20px;
+        border: 0;
+        border-radius: 35px;
+        box-shadow: 0px 0px 0px 5px #110f10;
+        text-transform: uppercase;
+        border: 1px solid #4ab3e0;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-shadow: -1px 1px #4b7380;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3aaee0+0,26a8e0+100 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4aaddb+0,0da1e0+100 */
+        background: #29aae2;
+
+      }
+      button:hover {
+        background: #249ace;
+        border: 1px solid #409cc3;
+      }
+
+      .column {
+        position: relative;
+        bottom: 50px;
+      }
+    
+      .column:nth-child(1) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+
+      .column:nth-child(2) {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .logo {
+      height: 200px;
+      margin: 0 auto;
+      position: relative;
+      bottom: 37px;
+    }
+  }
+}
