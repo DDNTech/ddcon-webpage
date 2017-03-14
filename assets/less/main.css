@@ -399,6 +399,7 @@ button.register:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1da0d9', endColorstr='#bd1d32', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
+  color: #f1f0f0;
 }
 @media (max-width: 1250px) {
   #about .rewind-item.left,
