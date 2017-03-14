@@ -98,7 +98,7 @@ h2 {
 /* --------- SPLASH --------- */
 #splash {
   overflow: hidden;
-  height: 70%;
+  height: 75%;
 }
 #splash .content {
   height: calc(100% - 50px);
@@ -410,6 +410,13 @@ button.register:hover {
 }
 button:focus {
   outline: 0;
+}
+#splash button {
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding: 15px 30px;
 }
 @media (max-width: 1250px) {
   #about .rewind-item.left,
