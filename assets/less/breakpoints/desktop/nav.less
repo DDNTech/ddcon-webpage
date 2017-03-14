@@ -7,18 +7,33 @@
 
 header {
   padding: 30px;
+  font-size: 17px;
 
   li {
     a {
       color: white;
-      text-transform: uppercase;
+      text-transform: uppercase;5
       font-size: 17px;
       font-weight: 300;
       letter-spacing: 1px;
+
+      &.registration {
+        background: #423a3c;
+        color: white;
+        border-radius: 100px;
+        font-weight: 300;
+        padding: 10px 20px;
+        position: relative;
+        top: 6px;
+      }
+
+      &.registration:hover {
+        background: #5f5456;
+      }
+
     }
 
     a:hover {
-      color: #29aae2;
       text-decoration: none;
       background: none;
     }
@@ -39,6 +54,7 @@ header {
   align-items: center;
   padding: 50px 40px;
   font-size: 17px;
+
 
   li {
     display: inline;

@@ -155,16 +155,28 @@ h2 {
 }
 header {
   padding: 30px;
+  font-size: 17px;
 }
 header li a {
   color: white;
   text-transform: uppercase;
-  font-size: 17px;
+  5font-size: 17px;
   font-weight: 300;
   letter-spacing: 1px;
 }
+header li a.registration {
+  background: #423a3c;
+  color: white;
+  border-radius: 100px;
+  font-weight: 300;
+  padding: 10px 20px;
+  position: relative;
+  top: 6px;
+}
+header li a.registration:hover {
+  background: #5f5456;
+}
 header li a:hover {
-  color: #29aae2;
   text-decoration: none;
   background: none;
 }
