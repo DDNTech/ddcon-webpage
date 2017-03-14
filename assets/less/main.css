@@ -468,6 +468,9 @@ button:focus {
   .separator {
     display: none;
   }
+  #splash .content {
+    height: 75%;
+  }
   #splash .content .logo {
     height: 125px;
   }
