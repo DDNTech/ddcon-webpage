@@ -252,6 +252,26 @@ header li:hover {
 #team .team-image {
   text-align: center;
 }
+#team .team-item {
+  height: 150px;
+  width: 150px;
+}
+#team .overlay {
+  position: relative;
+  bottom: 150px;
+  left: 0;
+  z-index: 50000;
+  background: rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  padding: 30px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
 /* --------- ABOUT --------- */
 #about {
   text-align: center;
@@ -465,8 +485,11 @@ button:focus {
     flex-direction: column;
     width: 150px;
   }
-  #team .team-wrapper img {
+  #team .team-wrapper .team-item {
     margin-bottom: 50px;
+  }
+  #team .team-wrapper .overlay {
+    display: flex;
   }
   #team .team-wrapper:nth-child(n + 1) {
     margin-top: -25px;
