@@ -1,4 +1,15 @@
 #registration {
+  ul.breakdown {
+    list-style-type: initial;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .breakdown-container {
+    width: 100%;
+    display: flex;
+  }
+
   .container-fluid {
     text-align: center;
 
@@ -12,7 +23,7 @@
     }
 
     table {
-      width: 500px;
+      width: 600px;
       margin: 0 auto;
       font-size: 17px;
       color: white;
@@ -73,12 +84,14 @@
 #three-day-pass, #one-day-pass {
   text-align: center;
   height: initial;
+  padding-bottom: 30px;
 }
 
 #reg-costs {
   height: initial;
   &.container-fluid {
     table {
+      margin-bottom: 40px;
       th {
         font-size: 18px;
       }
@@ -95,5 +108,10 @@
   #registration .container-fluid table {
     font-size: 15px;
     width: 100%;
+  }
+
+  #registration #splash .content .logo {
+    width: 90%;
+    height: initial;
   }
 }

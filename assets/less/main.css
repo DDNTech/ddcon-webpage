@@ -323,6 +323,15 @@ header li:hover {
   align-items: stretch;
   width: 810px;
 }
+#registration ul.breakdown {
+  list-style-type: initial;
+  text-align: left;
+  margin: 0 auto;
+}
+#registration .breakdown-container {
+  width: 100%;
+  display: flex;
+}
 #registration .container-fluid {
   text-align: center;
 }
@@ -334,7 +343,7 @@ header li:hover {
   margin: 40px auto;
 }
 #registration .container-fluid table {
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
   font-size: 17px;
   color: white;
@@ -380,9 +389,13 @@ header li:hover {
 #one-day-pass {
   text-align: center;
   height: initial;
+  padding-bottom: 30px;
 }
 #reg-costs {
   height: initial;
+}
+#reg-costs.container-fluid table {
+  margin-bottom: 40px;
 }
 #reg-costs.container-fluid table th {
   font-size: 18px;
@@ -395,6 +408,10 @@ header li:hover {
   #registration .container-fluid table {
     font-size: 15px;
     width: 100%;
+  }
+  #registration #splash .content .logo {
+    width: 90%;
+    height: initial;
   }
 }
 .white button.register {
@@ -554,7 +571,7 @@ footer ul {
   padding: 0;
   margin: 0;
 }
-ul > li {
+ul.nav > li {
   list-style-type: none;
 }
 footer a {
