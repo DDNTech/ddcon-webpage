@@ -20,9 +20,11 @@ $(document).ready(function() {
 })
 
 $(document).on('click', 'a', function(event){
-    event.preventDefault();
+    if ($.attr(this, 'href')[0] == '#') {
+      event.preventDefault();
 
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+    }
 });

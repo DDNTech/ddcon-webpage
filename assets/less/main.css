@@ -448,6 +448,25 @@ button:focus {
   font-size: 15px;
   letter-spacing: 3px;
 }
+footer,
+footer.container-fluid {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+footer ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+footer ul a {
+  color: white;
+  margin-left: 10px;
+}
+footer ul li {
+  display: inline;
+}
 @media (max-width: 1250px) {
   #about .rewind-item.left,
   #about .rewind-item.right {
@@ -520,3 +539,84 @@ button:focus {
   }
 }
 /********** Super extra small devices Only **********/
+.icon-bar {
+  background-color: white;
+}
+.navbar-collapse {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 0.8em;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+ul > li {
+  list-style-type: none;
+}
+footer a {
+  cursor: pointer;
+}
+.usefullinks {
+  float: right;
+  position: relative;
+  left: -50%;
+}
+.usefullinks ul {
+  position: relative;
+  left: 50%;
+}
+.usefullinks li {
+  float: left;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-right: 1px solid white;
+}
+.usefullinks li:nth-child(4) {
+  border: none;
+}
+.followus {
+  padding-top: 50px;
+}
+.followus ul {
+  text-align: left;
+  margin: 0 auto;
+  width: 215px;
+}
+.followus li {
+  margin: 10px 0;
+}
+.followus img {
+  margin-right: 7px;
+}
+@media (max-width: 600px) {
+  .usefullinks li {
+    padding: 5px 10px;
+  }
+  .reglogo {
+    width: 350px;
+    height: 90px !important;
+  }
+  #splash .content .row ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .usefullinks {
+    float: none;
+  }
+  .usefullinks li {
+    float: none;
+    border-right: none;
+    padding: 10px;
+    margin: 0 100px;
+    border-bottom: 1px solid lightgray;
+  }
+  .followus {
+    padding-top: 0;
+    margin: 0;
+  }
+}

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="assets/less/main.css"/>
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?xjspsi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -13,74 +14,52 @@
 
   <div id="splash" class="container-fluid">
     <header>
-     <div class="navbar-header">
-       <a href="index.html" class="pull-left">
-        <div class="brand">
-          <img src="assets/img/brand.png">
-        </div>
-      </a>
+      <div class="navbar-header">
+        <a href="index.html" class="pull-left">
+          <div class="brand">
+            <img src="assets/img/brand.png">
+          </div>
+        </a>
 
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div id="collapsable-nav" class="collapse navbar-collapse">
-      <ul id="nav-links" class="nav navbar-nav navbar-right"> 
-        <li>
-          <a href="registration.html" class="registration">Registration</a>
-        </li>
-        <li>
-          <a href="#about">Last Year</a> 
-        </li>
-        <li>
-          <a href="#team">Team</a>
-        </li>
-        <li>
-          <a href="#sponsorship">Sponsors</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-  <div class="content container-fluid">
-    <div class="row">
-      <div class="registration inner">
-        <img class="logo" src="assets/img/ddconlogoinv.png" alt="DDCON 2017"/>
-        <ul>
-          <li>July 21-23, 2017</li>
-          <li><a href="http://www.embassyohare.com/">Embassy Suites</a></li>
-          <li>Chicago, IL</li>
-        </ul>
-        <button class="button register">Let's Play →</button>
+        <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      
-    </div>
-  </div>
-</div>
 
-      <!-- <div class="ctas row">
-        <div class="cta-item col-md-4">
-          <h3>Dance</h3>
-          <p class="description">Follow your passion and come play!</p>
-          <button>Register Now!</button>
-        </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+        <ul id="nav-links" class="nav navbar-nav navbar-right"> 
+          <li>
+            <a href="registration.html" class="registration">Registration</a>
+          </li>
+          <li>
+            <a href="#about">Last Year</a> 
+          </li>
+          <li>
+            <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="#sponsorship">Sponsors</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-        <div class="cta-item col-md-4">
-          <h3>Dance</h3>
-          <p class="description">Follow your passion and come play!</p>
-          <button>Register Now!</button>
+    <div class="content container-fluid">
+      <div class="row">
+        <div class="registration inner">
+          <img class="logo" src="assets/img/ddconlogoinv.png" alt="DDCON 2017"/>
+          <ul>
+            <li>July 21-23, 2017</li>
+            <li><a href="http://www.embassyohare.com/">Embassy Suites</a></li>
+            <li>Chicago, IL</li>
+          </ul>
+          <button class="button register">Let's Play →</button>
         </div>
-
-        <div class="cta-item col-md-4">
-          <h3>Dance</h3>
-          <p class="description">Follow your passion and come play!</p>
-          <button>Register Now!</button>
-        </div>
-      </div> -->
+        
+      </div>
     </div>
   </div>
 
@@ -90,7 +69,7 @@
     <h2>Let's Rewind</h2>
     <div class="row">
       <div class="rewind-item left">
-        Last year, DDCON brought together over X people for 36 crazy hours in Atlanta, GA.
+        Last year, DDCON brought together over 150 people together for 36 crazy hours in Atlanta, GA.
       </div>
 
       <div class="rewind-item left image-wrapper col-sm">
@@ -100,7 +79,7 @@
       </div>
 
       <div class="rewind-item center">
-        Our dancers brought raw energy and inspiration to the floor and showcased their styles through workshops and mixers.
+        Our dancers brought raw energy and inspiration to the floor.
       </div>
 
       <div class="rewind-item center image-wrapper">
@@ -186,26 +165,6 @@
         <span class="overlay">Test</span>
       </div>
     </div>
-
-
-    <!-- <div class="team-wrapper">
-      <div class="team-member">
-        <div class="team-member-image">
-          <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-ash4/1375940_644187362268054_1121005468_n.jpg">
-        </div>
-        <div class="team-member-details" style="display: none;">
-          <h2>Lorem Ipsum</h2>
-        </div>
-      </div>
-      <div class="team-member">
-        <div class="team-member-image">
-          <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-ash4/1375940_644187362268054_1121005468_n.jpg">
-        </div>
-        <div class="team-member-details" style="display: none;">
-          <h2>Lorem Ipsum</h2>
-        </div>
-      </div>
-    </div> -->
   </div>
 
   <div class="separator reverse"></div>
@@ -219,13 +178,23 @@
     </div>
 
     <div class="separator reverse invert"></div>
-    <footer>
+    <footer class="container-fluid">
+      <div class="row">
+        <p class="col-md-6 copyright">&copy; Copyright Desi Dance Network 2017</p>
+        <ul class="col-md-6">
+          <li><a href="https://www.facebook.com/events/783096245197993/"><i class="socicon-facebook"></i></a></li>
+          <li><a href="https://instagram.com/desidanceconvention"><i class="socicon-instagram"></i></a></li>
+          <li><a href="https://www.snapchat.com/add/desidancecon"><i class="socicon-snapchat"></i></a></li>
+          <li><a href="mailto:spatel@desidancenetwork.org"><i class="socicon-mail"></i></a></li>
+        </ul>
+      </div>
     </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src="assets/scripts/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/scripts/script.js"></script>
   </body>
   </html>
